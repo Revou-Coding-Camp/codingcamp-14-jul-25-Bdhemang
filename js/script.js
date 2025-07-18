@@ -1,4 +1,4 @@
-
+console.log('JavaScript is working.');
 
 //Fungsi pemanggilan awal website diakses
 showWelcomePopup();
@@ -19,7 +19,7 @@ function showWelcomePopup(){
 function validateForm()
 {
 const nameInput=document.getElementById('name-input');
-
+console.log(nameInput.value);
 
 if (nameInput.value === ''){
 alert('Please insert name !');
