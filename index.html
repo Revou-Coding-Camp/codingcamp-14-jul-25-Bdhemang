@@ -4,8 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+        <!-- CSS External Link --> 
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- CSS Tailwind --> 
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
+
+    <header class="flex justify-between items-center p-[40px] bg-gray-300">
+
+<marquee behavior="scroll" direction="down">
+    <div class="h-20 w-30 bg-[url(https://www.tamiya.com/cms/images/new_blklogo.gif)] bg-center bg-cover"> </div>
+</marquee>
+
+    <marquee behavior="alternate">
+<nav class="flex">
+    <a class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none" href="#home-page">Home</a>
+    <a class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none" href="#my-profile">My Profile</a>
+    <a class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none" href="#message-us">Message Us</a>
+</nav>
+</marquee> 
+</header>
+
+    <hr  />
+
+<!-- Main Content -->
+<main>
+
+<!-- Content Home Page -->    
+<section id="home-page"> 
+<header>
+        <h1 class="text-2xl font-bold text-center my-4"> 
+            Welcome <span id="welcome-user"> [User]</span> to my Website 
+        </h1>
+</header>
+
+<div>
+    <p class="text-center">
+            This is the home page content. Here you can find varios information about my exprience
+        </p>
+<!--terhubung dengan file CSS-->
+<div class="banner-img">
+</div>   
+</div>
+
+<!--Komentar-->
+
+</section> 
+<hr  />
+
+<!-- Content My Profile-->
+<section id="my-profile"> </section>
+<h1 class="text-xl font-bold text-left my-2 px-160"> 
+My Profile
+</h1>
+
+<h2 class="text-1xl font-bold text-left my-2 px-160 justify">
+    Hallo, My name is Benthar Dhemang Tirtha. I am a dedicated individual with a strong commitment to my work. I always strive to deliver the best results and meet the set targets.
+I am also known as a meticulous worker with great attention to detail. I believe that meticulousness is the key to achieving high-quality and satisfying results.
+As a hard worker, I am not afraid to work overtime or take on additional responsibilities if necessary. I believe that hard work and dedication are the keys to achieving success.
+In addition, I am also a good learner. I always strive to enhance my knowledge and skills through training, workshops, and work experience. I believe that continuous learning is the key to staying relevant and competitive in the workforce.
+I am also interested in drawing, and on several occasions, I have tried drawing network assets and natural gas facility assets in both 3D and 2D formats.
+</h2>
+<hr  />
+
+
+<!-- Content Message Us-->
+<section id="message-us">
+
+    <header>
+<h2 class="text-xl font-semibold text-center my-4">Silahkan isi komentar !
+</h2>
+</header>
+  
+<div class="flex justify-center items-center">
+
+<form>
+
+
+<div class="flex flex-col items-center">
+    <label for="name" class="mb-2">Komentar</label>
+    <input type="text" id="name-input" name="name" class="border rounded p-2 mb-4 w-1/2">
+
+    <button onclick="validateForm();" type="button"
+class="bg-blue-500 text-white font-bold py-4 px-6 rouded hover:bg-blue-600 transition duration-300"> [ Send Name ]
+</button>
+</div>
+</form>
+
+<div id="message-output" class="text-center mt-4">Result :</div>
+    
+</div>
+
+</section>
+</main> 
+<hr  />
+
+
+
+<footer>
+<!-- Kode Link ke JavaScript (script.js)-->    
+
+<script src="js/script.js"> 
+</script>
+
+</footer>
+
     
 </body>
 </html>
